@@ -1,6 +1,7 @@
 {
   "fixtures-docker-compose": {
-    "app": "fixtures",
-    "path": "fixtures/docker-compose"
+    "compose": "fixtures/docker-compose/docker-compose.yml",
+    "autoSudo": true,
+    "sudo": false
   }
 }
