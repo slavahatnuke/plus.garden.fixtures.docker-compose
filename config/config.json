@@ -1,0 +1,6 @@
+{
+  "fixtures-docker-compose": {
+    "app": "fixtures",
+    "path": "fixtures/docker-compose"
+  }
+}

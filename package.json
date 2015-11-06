@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/slavahatnuke/plus.garden.fixtures.docker-compose/issues"
   },
-  "homepage": "https://github.com/slavahatnuke/plus.garden.fixtures.docker-compose"
+  "homepage": "https://github.com/slavahatnuke/plus.garden.fixtures.docker-compose",
+  "dependencies": {
+    "which": "^1.2.0"
+  }
 }
