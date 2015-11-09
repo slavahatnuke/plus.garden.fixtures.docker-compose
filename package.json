@@ -1,6 +1,6 @@
 {
   "name": "plus.garden.fixtures.docker-compose",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "docker compose fixture provider for plus.garden",
   "main": "index.js",
   "scripts": {
