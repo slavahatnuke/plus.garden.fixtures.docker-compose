@@ -45,7 +45,7 @@ floder has 2 files:
 ```
 fixtures:
   build: ./
-  command: mongod
+  command: "mongod --smallfiles"
   ports:
     - "17017:27017" #host:service
 ```
@@ -66,6 +66,11 @@ RUN apt-get install -y build-essential python-software-properties git
 #mongo
 RUN apt-get install -y mongodb
 RUN mkdir -p /data/db/
+
+RUN echo "version 0.0.3"
+ADD ./dump /dump
+
+RUN (mongod --smallfiles &) && sleep 15 && cd / && mongorestore
 ```
 Dockerfile builds your image with services.
 
@@ -79,5 +84,10 @@ When you use garden CLI
 it drops or creates docker container(s) to support your app with fresh datasets and services.
 take a look [plus.garden bdd framework](https://www.npmjs.com/package/plus.garden) for more details.
 
+if you need debug loading fixtures just add flag `--debug` like:
+`./garden.js fixtures.load --debug` it should print additional info about process.
+
 Have a fun!
+
+
 
