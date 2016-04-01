@@ -6,7 +6,7 @@ Main idea of this to integrate [plus.garden](https://www.npmjs.com/package/plus.
 ## Requirements
 - `plus.garden` [plus.garden](https://www.npmjs.com/package/plus.garden)
 - `docker` [https://www.docker.com/](https://www.docker.com/)
-- `docker-compose` [https://docs.docker.com/compose/]https://docs.docker.com/compose/
+- `docker-compose` [https://docs.docker.com/compose/](https://docs.docker.com/compose/)
 
 ## Installation
 - `npm install plus.garden.fixtures.docker-compose --save`
